@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Графики характеристик системы</title>
+    <link href="/static/css/style.css" rel="stylesheet">
+</head>
+<body>
+<div>
+    <header>
+        <ul class="nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Параметры</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="/graphic">График</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/diagrams">Диаграммы</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/facks">Возмущения</a>
+            </li>
+        </ul>
+    </header>
+
+    <div class="all">
+        <div class="container">
+            <div class="graphic-section">
+                <h2 class="page-title">График характеристик системы</h2>
+                
+                <div class="image-container">
+                    <img src="/static/images/figure.png" id="graphic-image" class="graphic-img">
+                </div>
+                
+                <div class="graphic-info">
+                    <p>На графике отображены изменения характеристик системы во времени. Каждая линия соответствует определенному параметру.</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/static/js/graphicChecker.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Внешние воздействия системы</title>
+    <link href="/static/css/style.css" rel="stylesheet">
+</head>
+<body>
+<div>
+    <header>
+        <ul class="nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Параметры</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/graphic">График</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/diagrams">Диаграммы</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/facks">Возмущения</a>
+            </li>
+        </ul>
+    </header>
+
+    <div class="all">
+        <div class="container">
+            <div class="disturbances-section">
+                <h2 class="page-title">Внешние воздействия и параметры окружающей среды</h2>
+                <p class="page-subtitle">Графики внешних факторов влияющих на систему</p>
+                
+                <div class="image-container">
+                    <img src="/static/images/disturbances.png" id="disturbances-image" class="graphic-img">
+                </div>
+                
+                <!-- <div class="disturbances-info">
+                    <h3>Описание внешних воздействий:</h3>
+                    <div class="legend">
+                        <div class="legend-item">
+                            <div class="legend-color" style="background-color: #1f77b4;"></div>
+                            <span><strong>F₁</strong> - Средняя выработка ресурса до списания</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background-color: #ff7f0e;"></div>
+                            <span><strong>F₂</strong> - Доля иностранных воздушных судов</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background-color: #2ca02c;"></div>
+                            <span><strong>F₃</strong> - Средний лётный стаж пилотов</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background-color: #d62728;"></div>
+                            <span><strong>F₄</strong> - Стоимость авиационного топлива</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background-color: #9467bd;"></div>
+                            <span><strong>F₅</strong> - Количество нормативно-правовых актов</span>
+                        </div>
+                    </div>
+                </div> -->
+
+                 <div class="disturbances-info">
+                    <h3>Описание внешних воздействий:</h3>
+                    <ul>
+                        <li><strong>F₁</strong> - Средняя выработка ресурса до списания</li>
+                        <li><strong>F₂</strong> - Доля иностранных воздушных судов</li>
+                        <li><strong>F₃</strong> - Средний лётный стаж пилотов</li>
+                        <li><strong>F₄</strong> - Стоимость авиационного топлива</li>
+                        <li><strong>F₅</strong> - Количество нормативно-правовых актов</li>
+                    </ul>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/static/js/disturbancesChecker.js"></script>
+</body>
+</html>

@@ -1,0 +1,551 @@
+/* Основной контейнер с красивым фоном */
+.all {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border-radius: 16px;
+    margin: 20px;
+    padding: 40px;
+    box-shadow: 
+        0 8px 25px rgba(0, 0, 0, 0.15),
+        0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e9ecef;
+}
+
+/* Основной контейнер внутри блока с фоном */
+.container {
+    max-width: 1400px; 
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #8db7f8 0%, #54b9e1 100%);
+    line-height: 1.5; 
+    min-height: 100vh;
+}
+
+.nav-tabs {
+    background-color: #2c3e50;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    margin: 0 0 30px 0; 
+    border-radius: 12px 12px 0 0;
+}
+
+.nav-link {
+    color: #ecf0f1;
+    border: none;
+    padding: 16px 30px; 
+    text-decoration: none;
+    display: block;
+    font-size: 16px; 
+    font-weight: 500;
+}
+
+.nav-link.active {
+    background-color: #3498db;
+    color: white;
+}
+
+.nav-link:hover {
+    background-color: #34495e;
+}
+
+
+.container-scroll {
+    max-height: 400px; 
+    overflow-y: auto;
+    border: 2px solid #e1e5e9; 
+    border-radius: 12px;
+    padding: 25px; 
+    background-color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.scroll-1 {
+    max-height: 400px;
+}
+
+.scroll-2 {
+    max-height: 400px;
+}
+
+
+.block-function {
+    background-color: white;
+    border: 2px solid #e9ecef; 
+    border-radius: 10px; 
+    padding: 15px 20px; 
+    margin-bottom: 15px; 
+    font-size: 18px; 
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.block-function:hover {
+    border-color: #3498db;
+    box-shadow: 0 4px 20px rgba(52, 152, 219, 0.15);
+    transform: translateY(-2px);
+}
+
+.border-function {
+    border-left: 6px solid #3498db; 
+    background: linear-gradient(90deg, #f8f9ff 0%, #ffffff 100%);
+}
+
+/*  панель управления */
+.control-panel {
+    background: white;
+    padding-bottom: 35px ; 
+    border-radius: 12px;
+    border: 2px solid #e1e5e9;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.control-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+
+button {
+    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+    color: white;
+    border: none;
+    padding: 12px 24px; 
+    border-radius: 8px; 
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.25);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+}
+
+
+#status-input {
+    background-color: #f8f9fa;
+    border: 2px solid #e1e5e9;
+    padding: 10px 16px;
+    border-radius: 8px;
+    width: 140px;
+    font-size: 15px; 
+    font-weight: 500;
+}
+
+/*  заголовки  */
+h5 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-weight: 700; 
+    font-size: 20px; 
+    text-align: center;
+    letter-spacing: 0.5px; 
+}
+
+/* поля ввода  */
+.initial-conditions input[type="text"] {
+    font-size: 16px;
+    padding: 6px 8px; 
+    width: 35px; 
+    height: 25px; 
+    margin: 0 3px;
+    border: 2px solid #d1d9e6; 
+    border-radius: 6px;
+}
+
+.equation-input {
+    border: 2px solid #d1d9e6;
+    border-radius: 6px;
+    padding: 4px 6px;
+    margin: 0 2px;
+    width: 38px; 
+    text-align: center;
+    font-size: 15px; 
+    height: 26px; 
+}
+
+.faks-input {
+    border: 2px solid #d1d9e6;
+    border-radius: 6px;
+    padding: 4px 6px;
+    margin: 0 2px;
+    width: 40px; 
+    text-align: center;
+    font-size: 15px; 
+    height: 26px;
+}
+
+/* текст в начальных условиях */
+.initial-conditions .block-function {
+    font-size: 16px; 
+    padding: 18px 20px; 
+}
+
+.initial-conditions .param-label {
+    font-size: 18px; 
+    font-weight: 500; 
+}
+
+.initial-conditions .restriction-row {
+    font-size: 18px; 
+    font-weight: 500;
+}
+
+/* Центрированные блоки */
+.center-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px; 
+}
+
+.centered-section {
+    width: 75%; 
+    max-width: 900px;
+}
+
+.control-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.control-section {
+    width: 75%; 
+    max-width: 900px;
+}
+
+/*Характеристики и Уравнения */
+.top-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px; 
+    margin-bottom: 35px; /
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .all {
+        margin: 15px;
+        padding: 25px;
+    }
+    
+    .top-row {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .centered-section,
+    .control-section {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .nav-link {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+    
+    .container-scroll {
+        max-height: 350px;
+        padding: 20px;
+    }
+    
+    .control-buttons {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .block-function {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+}
+
+/* скроллбар */
+.container-scroll::-webkit-scrollbar {
+    width: 8px;
+}
+
+.container-scroll::-webkit-scrollbar-track {
+    background: #f1f3f4;
+    border-radius: 4px;
+}
+
+.container-scroll::-webkit-scrollbar-thumb {
+    background: #c1c9d6;
+    border-radius: 4px;
+}
+
+.container-scroll::-webkit-scrollbar-thumb:hover {
+    background: #a8b1c0;
+}
+
+/* Стили для страницы с графиком */
+.graphic-section {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.page-title {
+    color: #2c3e50;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.page-subtitle {
+    color: #7f8c8d;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+
+.image-container {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    border: 2px solid #e1e5e9;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    margin-bottom: 25px;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.graphic-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.diagram-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.graphic-info {
+    background: white;
+    border-radius: 10px;
+    padding: 20px 30px;
+    border: 2px solid #e1e5e9;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.graphic-info p {
+    font-size: 16px;
+    color: #5a6c7d;
+    line-height: 1.6;
+    margin: 0;
+    text-align: center;
+}
+
+/* Стили для страницы с диаграммами */
+.diagrams-section {
+    padding: 20px 0;
+}
+
+.diagrams-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.diagram-item {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    border: 2px solid #e1e5e9;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.diagram-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.diagram-item h3 {
+    color: #2c3e50;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Адаптивность для графиков и диаграмм */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 24px;
+    }
+    
+    .page-subtitle {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    
+    .diagrams-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .image-container {
+        padding: 20px;
+    }
+    
+    .graphic-info {
+        padding: 15px 20px;
+    }
+    
+    .diagram-item {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .diagrams-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .image-container {
+        padding: 15px;
+    }
+}
+
+/* Стили для скрытия изображений если расчет не выполнен */
+#graphic-image[style*="hidden"],
+#diagram-image[style*="hidden"],
+#diagram2-image[style*="hidden"],
+#diagram3-image[style*="hidden"],
+#diagram4-image[style*="hidden"],
+#diagram5-image[style*="hidden"] {
+    display: none;
+}
+
+.no-data-message {
+    text-align: center;
+    padding: 60px 20px;
+    background: white;
+    border-radius: 12px;
+    border: 2px dashed #bdc3c7;
+    margin: 20px 0;
+}
+
+.no-data-message h3 {
+    color: #7f8c8d;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.no-data-message p {
+    color: #95a5a6;
+    font-size: 16px;
+}
+.diagram-description {
+    color: #5a6c7d;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+/* Стили для подписей X1-X12 в начальных условиях */
+.param-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.param-number {
+    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    margin-right: 12px;
+    min-width: 40px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(52, 152, 219, 0.3);
+}
+
+.param-label {
+    flex: 1;
+    font-size: 14px;
+    color: #2c3e50;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.param-value-label {
+    font-size: 18px;
+    color: #5a6c7d;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+/* Обнови стили для строк с значениями */
+.param-row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.restriction-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    color: #5a6c7d;
+    font-weight: 500;
+}
+
+/* Сделаем блоки начальных условий немного выше */
+.initial-conditions .block-function {
+    padding: 15px 20px;
+    min-height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.disturbances-explanation {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+}
+
+.disturbances-explanation h4 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.disturbances-explanation p {
+    color: #5a6c7d;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
