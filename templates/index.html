@@ -94,6 +94,12 @@
         .compact-initial-row .label-col .x-label {
             font-size: 16px;
         }
+        .x-label sub {
+            vertical-align: sub; /* Выравнивание как нижний индекс */
+            line-height: 0;
+            position: relative;
+            bottom: -0.25em; /* Корректировка позиции */
+        }
         /* описание характеристики (подпись) — меньше и более приглушённый цвет */
         .compact-initial-row .label-col .param-label {
                             flex: 1;
@@ -281,7 +287,7 @@
                             <div class="eq-expression">
                                 <input class="equation-input" name="f{{ i }}_k" 
                                        value="{{ (values.equations[i-1][0] if values else defaults.equations[i-1][0]) }}"
-                                       placeholder="0.5" type="text" />
+                                       placeholder="0.1" type="text" />
                                 <span class="formula-text">·X{{ u_subscript }} +</span>
                                 <input class="equation-input" name="f{{ i }}_b" 
                                        value="{{ (values.equations[i-1][1] if values else defaults.equations[i-1][1]) }}"
@@ -306,7 +312,7 @@
             <div class="compact-initial-row">
                 <div class="label-col">
                     <!-- Разделил на две строки: X# и описание (param-label) -->
-                    <div class="x-label">X{{ i }}</div>
+                    <div class="x-label">X{{ i | subscript }}</div>
                     <div class="param-label">{{ u_labels[i-1] }}</div>
                 </div>
                 <div class="value-col">
