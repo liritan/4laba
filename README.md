@@ -9,7 +9,7 @@ python app.py
 
  Ссылка на проект
 
-[https://liritan.pythonanywhere.com/](https://alina1847275.pythonanywhere.com/)
+https://alina1847275.pythonanywhere.com/
 
 Авторы
 
